@@ -5,14 +5,16 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 
+
 public class TEST_DELETE {
+    private static final int STATUS_CODE = 401;
     @Test
     public void tetst_1_delete(){
 
 
                 when().
-                delete("https://reqres.in/api/users/2").
-                then().statusCode(204).
+                delete("https://api.thecatapi.com/v1/favourites/1").
+                then().statusCode(STATUS_CODE).
                 log().all();
     }
 }

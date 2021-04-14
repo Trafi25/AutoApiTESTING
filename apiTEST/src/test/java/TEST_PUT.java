@@ -21,7 +21,6 @@ public class TEST_PUT {
                 body(request.toJSONString()).
                 when().
                 put("https://reqres.in/api/users").
-                then().statusCode(200).
-        log().all();
+                then().statusCode(200);
     }
 }
