@@ -8,6 +8,8 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class TEST_POST {
+
+    private static final String BASE_URI = "https://reqres.in/api/users";
     @Test
     public void tetst_1_post(){
 
@@ -23,7 +25,7 @@ public class TEST_POST {
                 contentType(ContentType.JSON).accept(ContentType.JSON).
                 body(request.toJSONString()).
                 when().
-                post("https://reqres.in/api/users").
+                post(BASE_URI).
                 then().statusCode(201);
     }
 }

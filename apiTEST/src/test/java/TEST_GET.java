@@ -10,7 +10,7 @@ import static org.hamcrest.CoreMatchers.hasItems;
 
 
 
-public class TEST_GET {
+public class TEST_GET{
 
     private static final int STATUS_CODE_OK = 200;
     private static final int STATUS_NOT_FOUND = 404;
@@ -23,7 +23,7 @@ public class TEST_GET {
     }
 
     @Test
-    public void test_1(){
+    public void testgetcatigorieslist(){
 
         Helper.GetResourse("/v1/categories")
                 .then()
@@ -34,7 +34,7 @@ public class TEST_GET {
 
 
     @Test
-    public void test_2(){
+    public void testfakegetcatigorieslist(){
 
         Helper.GetResourse("/v2/categories")
                 .then()
@@ -44,7 +44,7 @@ public class TEST_GET {
     }
 
     @Test
-    public void test_3(){
+    public void testketegorieslistbuid(){
 
         Helper.GetResourse("/v1/images/search")
 

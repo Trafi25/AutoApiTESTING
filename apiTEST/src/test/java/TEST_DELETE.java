@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.when;
 public class TEST_DELETE {
     private static final int STATUS_CODE = 401;
     @Test
-    public void tetst_1_delete(){
+    public void tetstdeleteoneofbettercats(){
 
 
                 when().
